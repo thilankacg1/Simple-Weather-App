@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Weather App</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header__lable">
+        <div class="header__lable--left" id="city"></div>
+        <div class="header__lable--right" id="date"></div>
+      </div>
+
+      <div class="header__container">
+        <div class="header__title">
+          <h1>Weather Check & Forecast</h1>
+        </div>
+        <form class="header__form">
+          <input
+            class="header__input"
+            type="text"
+            placeholder="Search a location"
+            autofocus
+          />
+          <span class="header__text"></span>
+          <button class="header__button" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <div class="loader" id="loader"></div>
+    <section class="city-section">
+      <div class="city-section__container">
+        <ul class="city-section__ul"></ul>
+      </div>
+    </section>
+    <section class="default-section" id="default-section" style="display: none">
+      <p class="default-section__header" id="weather"></p>
+      <div class="default-section__content" id="forecast"></div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <small>By simply code</small>
+      </div>
+    </footer>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
